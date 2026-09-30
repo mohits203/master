@@ -20,10 +20,12 @@ for i in range(1,listLen+1):
     num = int(input("Enter the number you want to store in a array : "))
     if(userList.count(num) >= 1):
         alreadyIn = userList.index(num)
-        userListItemCount[alreadyIn] = userList.count(num)+1
+        userListItemCount[alreadyIn] = userListItemCount[alreadyIn]+1
     else: 
         userList.append(num)
         userListItemCount.append(1)
+
+
 
 print(f"original list : {userList} ")
 print(f"original list : {userListItemCount} ")
